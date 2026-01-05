@@ -1,0 +1,209 @@
+/* FONT MODERNO */
+body {
+    margin: 0;
+    padding: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(160deg, #fff8f0 0%, #f7e6d5 100%);
+    color: #333;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(90deg, #f2c38f, #d9915b);
+    padding: 25px 0;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 130px;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 12px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.restaurant-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* ORARI */
+.orari {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.orari h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #b35f2b;
+}
+
+.orari-box {
+    background: #fff3e6;
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+/* MENU */
+.menu {
+    margin: 30px 0;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #b35f2b;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu-category {
+    background: #fff3e6;
+    border-radius: 15px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.menu-category h3 {
+    margin-bottom: 10px;
+    color: #d9915b;
+}
+
+.menu-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-category li {
+    padding: 6px 0;
+    font-size: 1.1em;
+}
+
+/* GALLERIA FOTO */
+.galleria {
+    margin: 30px 0;
+    text-align: center;
+}
+
+.galleria h2 {
+    font-size: 2rem;
+    color: #b35f2b;
+    margin-bottom: 20px;
+}
+
+.foto-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.foto-container img {
+    width: 220px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.foto-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* PRENOTAZIONE */
+.prenotazione {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.prenotazione h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #b35f2b;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.prenota-btn {
+    display: inline-block;
+    background-color: #d9915b;
+    color: white;
+    text-decoration: none;
+    padding: 14px 30px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.prenota-btn:hover {
+    background-color: #b35f2b;
+    transform: scale(1.05);
+}
+
+.prenota-btn.whatsapp {
+    background-color: #25D366;
+}
+
+.prenota-btn.whatsapp:hover {
+    background-color: #1ebe57;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background: #f2c38f;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-top: 40px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .menu-container, .foto-container, .btn-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-category, .foto-container img {
+        width: 90%;
+    }
+}
